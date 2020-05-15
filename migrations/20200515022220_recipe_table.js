@@ -13,7 +13,7 @@ exports.up = function(knex) {
 			tbl
 				.integer('recipe_id')
 				.notNullable()
-				.references(id)
+				.references('id')
 				.inTable('recipes')
 				.onDelete('CASCADE')
 				.onUpdate('CASCADE');
